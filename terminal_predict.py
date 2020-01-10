@@ -17,8 +17,8 @@ from bert_base.bert import tokenization, modeling
 from bert_base.train.train_helper import get_args_parser
 args = get_args_parser()
 
-model_dir = r'C:\Users\C\Documents\Tencent Files\389631699\FileRecv\semi_corpus_people_2014'
-bert_dir = 'F:\chinese_L-12_H-768_A-12'
+model_dir = r'/home/lef/Desktop/output'
+bert_dir = '/home/lef/Desktop/bert_chinese'
 
 is_training=False
 use_one_hot_embeddings=False
@@ -86,7 +86,7 @@ def predict_online():
     with graph.as_default():
         print(id2label)
         while True:
-            print('input the test sentence:')
+            print('请输入需要预测的句子:')
             sentence = str(input())
             start = datetime.now()
             if len(sentence) < 2:
