@@ -17,3 +17,7 @@ pip install tensorflow
 pip install bert-serving-server
 pip install bert-serving-client
 
+# 安装
+git clone https://github.com/macanv/BERT-BiLSTM-CRF-NER
+cd BERT-BiLSTM-CRF-NER/
+python3 setup.py install
